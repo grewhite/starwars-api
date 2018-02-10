@@ -1,0 +1,184 @@
+html, 
+body {
+    min-height: 101%;
+    min-width: 250px;
+}
+body {
+    background: #45484d; 
+    background: -moz-linear-gradient(top top left, #45484d 0%, #000000 100%); 
+    background: -webkit-linear-gradient(top top left, #45484d 0%,#000000 100%); 
+    background: linear-gradient(to top left, #45484d 0%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); 
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.logo {
+    display: block;
+    height: auto;
+    width: 50%;
+    margin: 25px auto 0;
+}
+h2 {
+    font-size: 18px;
+}
+h4 {
+    float: right;
+}
+header {
+    background: url(../images/death-star.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 200px;
+    width: 100%;
+}
+.people {
+    float: left;
+    width: 100%;
+    min-height: 1000px;
+    margin: 0 0 45px;
+}
+.card {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 10px 0;
+    box-shadow: 5px 10px 18px #000;
+    position: relative;
+    -webkit-animation: fadein .5s; 
+    -moz-animation: fadein .5s; 
+    -ms-animation: fadein .5s; 
+    -o-animation: fadein .5s; 
+    animation: fadein .5s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+.card img {
+    max-width: 100%;
+}
+.next-button, .previous-button {
+    display: none;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 50px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+.previous-button {
+    float: left;
+}
+.next-button:hover, .previous-button:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffd54e;
+}
+.next-button span, .previous-button span {
+    display: block;
+    position: relative;
+    top: -2px;
+    float: right;
+    margin-left: 5px;
+}
+.previous-button span {
+    float: left;
+    margin-right: 5px;
+}
+.next-button:hover span {
+    -webkit-animation: button-next .5s; 
+    -moz-animation: button-next .5s; 
+    -ms-animation: button-next .5s; 
+    -o-animation: button-next .5s; 
+    animation: button-next .5s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;    
+    -webkit-animation-iteration-count: 2; 
+    -webkit-animation-direction: alternate;   
+    -webkit-animation-fill-mode: forwards; 
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.previous-button:hover span {
+    -webkit-animation: button-pre .5s; 
+    -moz-animation: button-pre .5s; 
+    -ms-animation: button-pre .5s; 
+    -o-animation: button-pre .5s; 
+    animation: button-pre .5s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;    
+    -webkit-animation-iteration-count: 2; 
+    -webkit-animation-direction: alternate;   
+    -webkit-animation-fill-mode: forwards; 
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.next-button.show, .previous-button.show {
+    display: block;
+}
+
+/* animations */
+@keyframes fadein {
+    from { opacity: 0; left:0px; top:20px;}
+    to   { opacity: 1; left:0px; top:0px; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; left:0px; top:20px;}
+    to   { opacity: 1; left:0px; top:0px; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; left:0px; top:20px;}
+    to   { opacity: 1; left:0px; top:0px; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; left:0px; top:20px;}
+    to   { opacity: 1; left:0px; top:0px; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; left:0px; top:20px;}
+    to   { opacity: 1; left:0px; top:0px; }
+}
+@keyframes button-next {
+    from { left:0px; }
+    to   { left:20px; }
+}
+@-moz-keyframes button-next {
+    from { left:0px;} 
+    to   { left:20px; }
+}
+@-webkit-keyframes button-next {
+    from { left:0px;}
+    to   { left:20px; }
+}
+@-ms-keyframes button-next {
+    from { left:0px;}
+    to   { left:20px;}
+}
+@-o-keyframes button-next {
+    from { left:0px;}
+    to   { left:20px; }
+}
+@keyframes button-pre {
+    from { right:0px; }
+    to   { right:20px; }
+}
+@-moz-keyframes button-pre {
+    from { right:0px;} 
+    to   { right:20px; }
+}
+@-webkit-keyframes button-pre {
+    from { right:0px;}
+    to   { right:20px; }
+}
+@-ms-keyframes button-pre {
+    from { right:0px;}
+    to   { right:20px;}
+}
+@-o-keyframes button-pre {
+    from { right:0px;}
+    to   { right:20px; }
+}
